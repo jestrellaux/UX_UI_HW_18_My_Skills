@@ -65,17 +65,17 @@ body {
 
 #fashion {
   grid-area: fashion;
-  background-image: url("../images je/fashion1.png");
-
+  background-image: url("");
+  
 }
 #govt {
   grid-area: govt;
-  background-image: url("../images je/govt1.png");
+  background-image: url("");
 }
 
 #nonProfit {
   grid-area: nonProfit;
-  background-image: url("../images je/np1.png");
+  background-image: url("");
 }
 
 .categoryGridArea {
