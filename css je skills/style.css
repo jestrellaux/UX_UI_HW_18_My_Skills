@@ -1,0 +1,197 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Grid CSS */
+
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 100%;
+  grid-template-columns: 0% 100%;
+  grid-template-areas:
+  "headline featuredProduct"
+}
+
+/* My Picture */
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+/* My Intro UX Researcher */
+
+#headline {
+  background-color: rgba(199, 218, 226, 0.8);
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Case Study Grid CSS */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 800px;
+  margin: 50px auto;
+}
+
+/* Case Study Pics Grid CSS */
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "fashion nonProfit govt";
+}
+
+#fashion {
+  grid-area: fashion;
+  background-image: url("../images je/fashion1.png");
+
+}
+#govt {
+  grid-area: govt;
+  background-image: url("../images je/govt1.png");
+}
+
+#nonProfit {
+  grid-area: nonProfit;
+  background-image: url("../images je/np1.png");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+/* Case Study titles CSS */
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #4E4C67;
+}
+
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #4E4C67;
+  font-weight: 700;
+}
+
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #4E4C67;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "featuredProduct headline";
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "fashion"
+      "govt"
+      "nonProfit"
+      ;
+  }
+
+  
+}
