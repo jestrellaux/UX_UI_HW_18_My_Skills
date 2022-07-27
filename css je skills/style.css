@@ -2,8 +2,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Hero Grid CSS */
-
+/* Hero Grid ID */
 #heroGrid {
   margin: 0px 5%;
   display: grid;
@@ -15,16 +14,14 @@ body {
   "headline featuredProduct"
 }
 
-/* My Picture */
-
+/* Hero Picture ID */
 #featuredProduct {
   grid-area: featuredProduct;
   justify-content: flex-end;
   cursor: pointer;
 }
 
-/* My Intro UX Researcher */
-
+/* UX Intro ID */
 #headline {
   background-color: rgba(199, 218, 226, 0.8);
   position: absolute;
@@ -35,6 +32,7 @@ body {
   z-index: 100;
 }
 
+/* Hero Grid Class */
 .heroGridArea {
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,8 +41,7 @@ body {
   position: relative;
 }
 
-/* Case Study Grid CSS */
-
+/* First Subheading Class */
 .subHeading {
   text-align: center;
   border-bottom: 2px solid rgb(255, 255, 255);
@@ -52,12 +49,12 @@ body {
   margin: 50px auto;
 }
 
-/* Case Study Pics Grid CSS */
-
-#categoryGrid {
+/* First Category Grid IDs */
+.categoryGrid {
   margin: 100px 5%;
   display: grid;
-  grid-template-rows: 300px 100px;
+  border: solid 3px red;
+  grid-template-rows: 300px 50px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "fashion nonProfit govt";
@@ -66,8 +63,8 @@ body {
 #fashion {
   grid-area: fashion;
   background-image: url("");
-  
 }
+
 #govt {
   grid-area: govt;
   background-image: url("");
@@ -78,18 +75,29 @@ body {
   background-image: url("");
 }
 
+/* First Cards Grid IDs */
 .categoryGridArea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   cursor: pointer;
+  
   display: block;
   align-content: end;
+  border: solid 3px #4E4C67;
 }
 
-/* Case Study titles CSS */
+/*.categoryGridArea:hover {
+  box-shadow: 10px 10px 5px lightblue;
+  } */
 
+  .categoryGridArea:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/* First Cards title IDs */
 .heading {
   background-color: #ffffff;
   padding: 10px;
@@ -98,7 +106,6 @@ body {
   text-align: center;
   color: rgb(19, 19, 19);
   font-size: 18px;
-  border-bottom: 3px solid #d5d5dd;
 }
 
 .center {
@@ -115,10 +122,9 @@ body {
   text-align: center;
   color: rgb(19, 19, 19);
   font-size: 16px;
-  
 }
 
-/* Navigation CSS */
+/* Navigation for Header & Footer menus */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 
 #navBar {
@@ -173,6 +179,7 @@ h4 {
   color: white;
   font-weight: 400;
   font-size: 22px;
+  margin: 0;
 }
 
 #headline p {
