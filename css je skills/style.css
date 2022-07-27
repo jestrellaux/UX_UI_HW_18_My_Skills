@@ -55,7 +55,7 @@ body {
 /* Case Study Pics Grid CSS */
 
 #categoryGrid {
-  margin: 0px 5%;
+  margin: 100px 5%;
   display: grid;
   grid-template-rows: 300px 100px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -84,21 +84,39 @@ body {
   background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
-  display: grid;
+  display: block;
   align-content: end;
 }
 
 /* Case Study titles CSS */
 
 .heading {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
   padding: 10px;
   height: 25px;
-  color: white;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(19, 19, 19);
   font-size: 18px;
-  border-bottom: 5px solid #4E4C67;
+  border-bottom: 3px solid #d5d5dd;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.text {
+  background-color: #ffffff;
+  padding: 10px;
+  height: 25px;
+  text-align: center;
+  color: rgb(19, 19, 19);
+  font-size: 16px;
+  
+}
 
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
