@@ -7,7 +7,7 @@ body {
   margin: 0px 5%;
   display: grid;
   min-height: 500px;
-  height: 70vh;
+  height: 50vh;
   grid-template-rows: 100%;
   grid-template-columns: 0% 100%;
   grid-template-areas:
@@ -23,11 +23,11 @@ body {
 
 /* UX Intro ID */
 #headline {
-  background-color: rgba(199, 218, 226, 0.8);
+  background-color: #c7dae2cc;
   position: absolute;
   left: 50px;
   top: 100px;
-  padding: 25px;
+  padding: 40px;
   max-width: 550px;
   z-index: 100;
 }
@@ -46,15 +46,27 @@ body {
   text-align: center;
   border-bottom: 2px solid rgb(255, 255, 255);
   width: 800px;
-  margin: 50px auto;
+  margin: 30px auto;
+  
+
 }
 
-/* First Category Grid IDs */
+.subHeading1 {
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 800px;
+  margin: 50px auto;
+ 
+
+}
+
+
+/* First Category Grid IDs (red outline)*/
 .categoryGrid {
-  margin: 100px 5%;
+  margin: 50px 5%;
   display: grid;
-  border: solid 3px red;
-  grid-template-rows: 300px 50px;
+  border: solid 3px white;
+  grid-template-rows: 400px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "fashion nonProfit govt";
@@ -87,8 +99,25 @@ body {
   
   display: block;
   align-content: end;
-  border: solid 3px #4E4C67;
+  border: solid 2px #4E4C67;
 }
+
+/*  Cards Grid IDs */
+.categoryGridArea1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+
+  display: block;
+  align-content: end;
+  border: solid 2px #4E4C67;
+}
+
+
 
 /*.categoryGridArea:hover {
   box-shadow: 10px 10px 5px lightblue;
@@ -97,6 +126,11 @@ body {
   .categoryGridArea:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  .categoryGridArea1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
 /* First Cards title IDs */
 .heading {
   background-color: #ffffff;
@@ -170,7 +204,7 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 300;
   margin: 0px 0px;
 }
@@ -182,6 +216,13 @@ h4 {
   margin: 0;
 }
 
+h5 {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: white;
+}
+
 #headline p {
   max-width: 350px;
   font-size: 16px;
@@ -189,6 +230,8 @@ h4 {
   margin: 0px 0px;
   color: #636364;
 }
+
+
 
 @media only screen and (max-width: 1000px) {
   #navigation {
